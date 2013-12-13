@@ -1,9 +1,9 @@
-# jQuery contextMenu plugin & polyfill #
+# jQuery contextMenu plugin & polyfill - jQuery-UI icon fork #
 
 $.contextMenu is a management facility for - you guessed it - context menus. It was designed for an application where there are hundreds of elements that may show a context menu - so intialization speed and memory usage are kept fairly small. It also allows to register context menus without providing actual markup, as $.contextMenu generates DOMElements as needed.
 
-[features](http://medialize.github.com/jQuery-contextMenu/index.html) - 
-[demo](http://medialize.github.com/jQuery-contextMenu/demo.html) - 
+[features](http://medialize.github.com/jQuery-contextMenu/index.html) -
+[demo](http://medialize.github.com/jQuery-contextMenu/demo.html) -
 [documentation](http://medialize.github.com/jQuery-contextMenu/docs.html)
 
 
@@ -40,7 +40,7 @@ Firefox 8 does not yet fully implement the contextmenu specification ([Ticket #6
 [a](http://www.whatwg.org/specs/web-apps/current-work/multipage/commands.html#using-the-a-element-to-define-a-command),
 [button](http://www.whatwg.org/specs/web-apps/current-work/multipage/commands.html#using-the-button-element-to-define-a-command),
 [input](http://www.whatwg.org/specs/web-apps/current-work/multipage/commands.html#using-the-input-element-to-define-a-command) and
-[option](http://www.whatwg.org/specs/web-apps/current-work/multipage/commands.html#using-the-option-element-to-define-a-command) 
+[option](http://www.whatwg.org/specs/web-apps/current-work/multipage/commands.html#using-the-option-element-to-define-a-command)
 usable as commands are being ignored altogether. It also doesn't (optically) distinguish between checkbox/radio and regular commands ([Bug #705292](https://bugzilla.mozilla.org/show_bug.cgi?id=705292)).
 
 * [contextmenu specs](http://www.w3.org/TR/html5/interactive-elements.html#context-menus)
@@ -85,7 +85,7 @@ use [Google Closure Compiler](http://closure-compiler.appspot.com/home):
 // @code_url http://medialize.github.com/jQuery-contextMenu/jquery-1.8.2.min.js
 // @code_url http://medialize.github.com/jQuery-contextMenu/src/jquery.ui.position.js
 // @code_url http://medialize.github.com/jQuery-contextMenu/src/jquery.contextMenu.js
-// ==/ClosureCompiler==    
+// ==/ClosureCompiler==
 ```
 
 
@@ -102,6 +102,9 @@ $.contextMenu is published under the [MIT license](http://www.opensource.org/lic
 
 
 ## Changelog ##
+### 1.6.5.1 (December 13th 2013) ###
+
+* Added support for new item option "uiIcon" that will create a span with classes specified by the parameter for a jQuery-UI style sprite icon.  ex: {uiIcon : "ui-icon ui-icon-close"}
 
 ### 1.6.5 (January 20th 2013) ###
 
